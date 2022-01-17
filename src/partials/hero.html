@@ -24,7 +24,24 @@
       </button>
     </div>
 
-    <img class="hero-elips" src="./images/header/hero-ellipse-pink-desk.png" alt="" />
+    <picture>
+      <source
+        srcset="
+          ./images/header/hero-ellipse-pink-desk.png    1x,
+          ./images/header/hero-ellipse-pink-desk@x2.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/header/hero-ellipse-pink-tablet.png    1x,
+          ./images/header/hero-ellipse-pink-tablet@x2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img class="hero-elips" src="./images/header/hero-ellipse-pink-desk.png" alt="" />
+    </picture>
+
     <img class="hero-icecream" src="./images/header/header-ice-desktop.png" alt="" />
     <img class="hero-girl" src="./images/header/header-girl-desktop.png" alt="" />
 
@@ -32,20 +49,54 @@
       <li class="points-info__item cafes">
         <p class="points-info__numbers">16</p>
         <p class="points-info__description">cafes</p>
-        <img
-          class="points-info__ellipse"
-          src="./images/header/hero-ellipse-points-desk.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/header/hero-ellipse-points-desk.png    1x,
+              ./images/header/hero-ellipse-points-desk@x2.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+
+          <source
+            srcset="
+              ./images/header/hero-ellipse-points-tablet.png    1x,
+              ./images/header/hero-ellipse-points-tablet@x2.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            class="points-info__ellipse"
+            src="./images/header/hero-ellipse-points-desk.png"
+            alt=""
+          />
+        </picture>
       </li>
       <li class="points-info__item trucks">
         <p class="points-info__numbers">23</p>
         <p class="points-info__description">food trucks</p>
-        <img
-          class="points-info__ellipse"
-          src="./images/header/hero-ellipse-points-desk.png"
-          alt=""
-        />
+
+        <picture>
+          <source
+            srcset="
+              ./images/header/hero-ellipse-points-desk.png    1x,
+              ./images/header/hero-ellipse-points-desk@x2.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/header/hero-ellipse-points-tablet.png    1x,
+              ./images/header/hero-ellipse-points-tablet@x2.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            class="points-info__ellipse"
+            src="./images/header/hero-ellipse-points-desk.png"
+            alt=""
+          />
+        </picture>
       </li>
     </ul>
   </div>
