@@ -84,7 +84,7 @@
       }
     }
     &--pink{
-        background: #FFB8CA;
+        background: $bg-header-hero;
         &::before {
           width: 249px;
           height: 252px;
@@ -111,7 +111,7 @@
       }
     }
     &--green {
-        background-color: #c2e297;
+        background-color: $bg-green-color;
         &::before {
           width: 249px;
           height: 252px;
@@ -138,7 +138,7 @@
         }
       }
     &--yellow {
-        background-color: #f0d1a5;
+        background-color: $bg-beige-color;
         &::before {
           width: 249px;
           height: 252px;
@@ -254,7 +254,7 @@
 
 .cards-ice__btn:hover{
   .cards-ice__icon--btn{
-    fill: #FFFFFF;
+    fill: $color-design-white;
   }
 }
 .cards-ice__icon--btn{
