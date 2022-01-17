@@ -63,33 +63,45 @@
     margin-bottom: 30px;
   }
 }
+
 .advantages__item1 {
   &::before {
-    width: 50px;
+    content: '';
+    width: 33px;
     height: 50px;
-    content: url('../images/pseudo-elements-svg/bucket.png');
+    background-size: contain;
+    background: url('../images/pseudo-elements-svg/bucket.png') no-repeat center;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pseudo-elements-svg/bucket@x2.png');
+      background: url('../images/pseudo-elements-svg/bucket@x2.png') no-repeat center;
+      background-size: contain;
     }
   }
 }
+
 .advantages__item2 {
   &::before {
+    content: '';
     width: 50px;
     height: 50px;
-    content: url('../images/pseudo-elements-svg/bucket-apple.png');
+    background-size: contain;
+    background: url('../images/pseudo-elements-svg/bucket-apple.png') no-repeat center;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pseudo-elements-svg/bucket-apple@x2.png');
+      background: url('../images/pseudo-elements-svg/bucket-apple@x2.png') no-repeat center;
+      background-size: contain;
     }
   }
 }
+
 .advantages__item3 {
   &::before {
+    content: '';
     width: 44px;
     height: 50px;
-    content: url('../images/pseudo-elements-svg/lollipop-heart.png');
+    background-size: contain;
+    background: url('../images/pseudo-elements-svg/lollipop-heart.png') no-repeat center;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pseudo-elements-svg/lollipop-heart@x2.png');
+      background: url('../images/pseudo-elements-svg/lollipop-heart@x2.png') no-repeat center;
+      background-size: contain;
     }
   }
 }
