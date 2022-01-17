@@ -25,7 +25,7 @@
         text-transform: uppercase;
         color: $color-design-main;
        }
-     
+        
         &__social-list{
          display: flex;
          justify-content:flex-end;
@@ -35,7 +35,27 @@
        &__social-item:not(:last-child){
          margin-right:30px;
        }  
-       &__social-sprite {
+       &__social-link {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        color: $color-design-white;
+        background-color: $bg-social;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+         
+         &:hover,
+         &:focus {
+           background-color: $color-design-main;
+           color: $bg-btn-light-hover;
+         }
+       } 
+       
+       
+       &__social-link {
         display: flex;
         width: 32px;
         height: 32px;
