@@ -1,4 +1,5 @@
 .hero {
+  overflow: hidden;
   background-color: $bg-header-hero;
   top: 0;
   left: 0;
@@ -9,6 +10,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
   @media screen and (min-width: $tablet) {
     min-width: 768px;
     height: 400px;
@@ -318,7 +320,7 @@
     top: 156px;
     left: 1111px;
   }
-  .points-info__item {
+  &__item {
     position: relative;
     margin-bottom: 15px;
     @media screen and (min-width: $tablet) {
@@ -328,7 +330,7 @@
       width: 92px;
     }
   }
-  .points-info__numbers {
+  &__numbers {
     position: relative;
     font-family: Titan One;
     font-style: normal;
@@ -348,7 +350,7 @@
     }
   }
 
-  .points-info__description {
+  &__description {
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
@@ -363,7 +365,7 @@
       line-height: 18px;
     }
   }
-  .points-info__ellipse {
+  &__ellipse {
     position: absolute;
     top: 0;
     right: 0;
