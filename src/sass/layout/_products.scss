@@ -83,33 +83,6 @@
       top: -42%;
     }
   }
-  // &--pink{
-  //     background: $bg-header-hero;
-  //     &::before {
-  //       width: 249px;
-  //       height: 252px;
-  //       content: url('../images/products/pr-ice-cream-mobile.png');
-  //       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //       content: url('../images/products/pr-ice-cream-mobile@x2.png');
-  //       }
-  //       @media screen and (min-width: $tablet) {
-  //         width: 220px;
-  //         height: 226px;
-  //       content: url('../images/products/pr-ice-cream-tablet.png');
-  //       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //         content: url('../images/products/pr-ice-cream-tablet@x2.png');
-  //       }
-  //     }
-  //       @media screen and (min-width: $desktop) {
-  //         width: 335px;
-  //         height: 335px;
-  //       content: url('../images/products/pr-ice-cream-desktop.png');
-  //       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //         content: url('../images/products/pr-ice-cream-desktop@x2.png');
-  //       }
-  //     }
-  //   }
-  // }
 
   &--pink {
     background: $bg-header-hero;
