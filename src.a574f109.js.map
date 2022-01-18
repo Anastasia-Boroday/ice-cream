@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts/customer/slider.js","index.js"],"names":["$","slick","dots"],"mappings":";;;AAAAA,EAAE,iBAAiBC,MAAM,CACrBC,MAAM;;ACAV,aADA,QAAA,oBACA,QAAA","file":"src.a574f109.js","sourceRoot":"../src","sourcesContent":["$('.reviews__set').slick({\n    dots: true\n});\n\n","import './sass/main.scss';\nimport './scripts/customer/slider.js';"]}
