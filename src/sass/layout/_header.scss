@@ -1,18 +1,26 @@
 header {
-  background-color: $bg-header-hero;
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  width: 100%;
 }
 
 .header_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 15px;
   padding-top: 6px;
   @media screen and (min-width: $tablet) {
     padding-top: 37px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   @media screen and (min-width: $desktop) {
     padding-left: 46px;
+    padding-right: 115px;
   }
 }
 
@@ -33,7 +41,7 @@ header {
   &:last-child {
     margin-right: 0;
   }
-  &:first-child {
+  &:first-child .navigation_link {
     color: $color-design-main;
   }
 }
@@ -58,6 +66,10 @@ header {
   border: none;
   width: 160px;
   height: 44px;
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-light-hover;
+  }
   @media screen and (max-width: 767.98px) {
     display: none;
   }
@@ -72,6 +84,7 @@ header {
 .js-open-menu {
   width: 40px;
   height: 40px;
+  padding-bottom: 10px;
   background-color: transparent;
   border: none;
   @media screen and (min-width: $tablet) {
