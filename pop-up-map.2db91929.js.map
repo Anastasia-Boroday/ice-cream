@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/pop-up-map.js"],"names":["popup","document","getElementById","classList","toggle"],"mappings":";AACUA,IAAAA,EAAQC,SAASC,eAAe,WACpCF,EAAMG,UAAUC,OAAO","file":"pop-up-map.2db91929.js","sourceRoot":"../src","sourcesContent":["    {\n      var popup = document.getElementById('myPopup');\n      popup.classList.toggle('show');\n    }"]}

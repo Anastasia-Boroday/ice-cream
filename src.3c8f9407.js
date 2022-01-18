@@ -5,4 +5,4 @@ $(".reviews__set").slick({dots:!0});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js");
 },{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.749c098f.js.map
+//# sourceMappingURL=/ice-cream/src.3c8f9407.js.map
