@@ -9,4 +9,4 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/mobile.js"),require("./scripts/btn-back");
 },{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.c76c294e.js.map
+//# sourceMappingURL=/ice-cream/src.bbb752c2.js.map
