@@ -1,0 +1,200 @@
+
+  
+  @media screen and(min-width:1200px) {
+    .backdrop__menu {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1279.8px) {
+    .backdrop-menu {
+      display: none;
+    }
+  
+    
+  
+    .backdrop__menu {
+      position: fixed;
+      top: 0;
+      right: 20px;
+  
+      z-index: 999;
+      height: 100%;
+  
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  
+    .mob__menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+  
+      height: 100vh;
+      padding: 25px;
+      background-color: #e17992;
+      z-index: 999;
+      opacity: 0;
+      overflow-y: scroll;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 250ms linear, visibility 250ms linear;
+  
+      &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+      }
+    }
+  
+    .btn__mob__menu {
+      position: fixed;
+      top: 15px;
+      right: 35px;
+  
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+  
+      width: 40px;
+      height: 40px;
+  
+      border-radius: 50%;
+      background-color: grey;
+      border: transparent;
+  
+      // transition:  background-color $pr-transition;
+  
+      .btn__mob__menu:focus,
+      .btn__mob__menu:hover {
+        background-color: #fff;
+      }
+    }
+  
+    .icon__close {
+      fill: $color-design-main;
+      // transition: color $pr-transition;
+  
+      .btn__mob__menu:focus &,
+      .btn__mob__menu:hover & {
+        fill: #fff;
+      }
+    }
+  
+    .btn__buy {
+      display: flex;
+      justify-content: center;
+      border-radius: 25px;
+      @media screen and (min-width: 1120px) {
+        width: 200px;
+      }
+  
+      font-family: $text-main;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.4;
+  
+      color: $bg-btn-dark;
+      background-color: #fff;
+  
+      &--size {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 15px 0;
+      }
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
+  
+    // mob-nav
+    .mob__nav {
+      &--item {
+        border-bottom: 1px solid #e18298;
+        border-top: 1px solid #e18298;
+        &:nth-child(2n) {
+          border-bottom: none;
+          border-top: none;
+        }
+      }
+  
+      &--link {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: auto;
+  
+        font-family: $text-main;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.3;
+        align-items: center;
+  
+        color: #fff;
+  
+        // transition: color $pr-transition background-color $pr-transition;
+  
+        &:hover,
+        &:focus {
+          color: #d41443;
+          background-color: #e18298;
+          text-align: center;
+        }
+        &:focus {
+          outline: none;
+          border: 1px solid #e18298;
+        }
+      }
+    }
+  }
+  .active {
+    color: #d41443;
+    text-align: center;
+    background-color: #e18298;
+  }
+  // min-width:768px
+  @media screen and (max-width: 767.8px) {
+    .btn__buy__desk {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .btn__buy__desk {
+      display: flex;
+      justify-content: center;
+      border-radius: 25px;
+  
+      width: 200px;
+  
+      font-family: $text-main;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.4;
+  
+      color: $bg-btn-dark;
+      background-color: #fff;
+  
+      &--size {
+        margin-left: 30px;
+        @media screen and (min-width: 1280px) {
+          margin-left: auto;
+        }
+  
+        padding: 15px 0;
+      }
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
+  }
+  
+  .backdrop__hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
