@@ -62,31 +62,31 @@
 //       margin-top: 10px;
 //   }
 
-   .burger{
-      width: 40px;
-       height: 40px;
-      margin-left: auto;
-      border:transparent;
-      background-color: green;
+//    .burger{
+//       width: 40px;
+//        height: 40px;
+//       margin-left: auto;
+//       border:transparent;
+//       background-color: green;
 
-        transition: color $pr-transition;
+//         transition: color $pr-transition;
 
-}
+// }
 
        
 
 
     
      
-     .icon-Burger{
-       fill: $color-design-main;
-       transition: color $pr-transition;
+    //  .icon-Burger{
+    //    fill: $color-design-main;
+    //    transition: color $pr-transition;
 
-       .burger:focus &,
-       .burger:hover &{
-         fill: #E17992;
-       }
-     }
+    //    .burger:focus &,
+    //    .burger:hover &{
+    //      fill: #E17992;
+    //    }
+    //  }
   
     
   
@@ -259,6 +259,9 @@
   }
   .active{
     color: #D41443;
+    text-align: center;
+    background-color:#E18298;
+
   }
 // min-width:768px
 @media screen  and (max-width:767.8px){
