@@ -17,4 +17,4 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/contacts-btn.js"),require("./scripts/mobile.js"),require("./scripts/btn-back"),require("./scripts/products-mod"),require("./scripts/products-mod2"),require("./scripts/products-mod3");
 },{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/contacts-btn.js":"rRCc","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO","./scripts/products-mod":"itWs","./scripts/products-mod2":"Ra7X","./scripts/products-mod3":"CNFb"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.70b808e7.js.map
+//# sourceMappingURL=/ice-cream/src.e6b4ea97.js.map
