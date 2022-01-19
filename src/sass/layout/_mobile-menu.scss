@@ -74,10 +74,10 @@
   
        transition:  background-color $pr-transition;
   
-      &:focus,
-      &:hover {
-        border: 1px solid $bg-btn-light-hover;
-      }
+       &:focus,
+       &:hover {
+         border: 1px solid $bg-btn-light-hover;
+       }
     }
   
     .icon__close {
@@ -120,10 +120,10 @@
 
       &--arrow{
         margin-left: 15px;
-        fill:green;
+        fill:currentColor;
         .btn__buy :hover &,
         .btn__buy :focus &{
-            fill:#d41443;
+            fill:blue;
         }
       }
     }
