@@ -6,7 +6,13 @@ $(".reviews__set").slick({dots:!0});
 (()=>{const e=document.querySelector(".js-menu"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),d=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",d),o.addEventListener("click",d),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"sOUO":[function(require,module,exports) {
 var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.addClass("show"):o.removeClass("show")}),o.on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},"300")});
+},{}],"itWs":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+},{}],"Ra7X":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open2]"),closeModalBtn:document.querySelector("[data-modal-close2]"),modal:document.querySelector("[data-modal2]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+},{}],"CNFb":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open3]"),closeModalBtn:document.querySelector("[data-modal-close3]"),modal:document.querySelector("[data-modal3]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/mobile.js"),require("./scripts/btn-back");
-},{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.c581b6b2.js.map
+"use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/mobile.js"),require("./scripts/btn-back"),require("./scripts/products-mod"),require("./scripts/products-mod2"),require("./scripts/products-mod3");
+},{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO","./scripts/products-mod":"itWs","./scripts/products-mod2":"Ra7X","./scripts/products-mod3":"CNFb"}]},{},["Focm"], null)
+//# sourceMappingURL=/ice-cream/src.21e39182.js.map
