@@ -387,10 +387,11 @@
   &--pink{
     background-color: $bg-mobile-menu-close;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    top: 15px;
     border-radius: 50%;
-    border:none;
+    border: 0px;
+    z-index: 50;
     &:hover,
     &:focus{
       -webkit-transform: scale(1.2);
@@ -401,10 +402,11 @@
   &--yellow{
     background-color: $bg-beige-color-close;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    top: 15px;
     border-radius: 50%;
-    border:none;
+    border: 0px;
+    z-index: 50;
     &:hover,
     &:focus{
       -webkit-transform: scale(1.2);
@@ -415,10 +417,11 @@
   &--green{
     background-color: $bg-green-color-close;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    top: 15px;
     border-radius: 50%;
-    border:none;
+    border: 0px;
+    z-index: 50;
     &:hover,
     &:focus{
       -webkit-transform: scale(1.2);
