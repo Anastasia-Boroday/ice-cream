@@ -269,15 +269,19 @@
   width: 171px;
   height: 410px;
   left: 117px;
-  top: 92px;
+  top: 192px;
+  // transform: translatey(-100px);
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transform: translatey(calc(-100px));
   @media screen and (min-width: $tablet) {
     width: 143px;
     height: 336px;
     left: 378px;
-    top: 63px;
+    top: 163px;
   }
   @media screen and (min-width: $desktop) {
-    top: 108px;
+    top: 208px;
     left: 594px;
     width: 236px;
     height: 557px;
