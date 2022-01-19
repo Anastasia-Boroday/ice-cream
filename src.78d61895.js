@@ -14,7 +14,9 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open2]"),closeModalBtn:document.querySelector("[data-modal-close2]"),modal:document.querySelector("[data-modal2]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"CNFb":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open3]"),closeModalBtn:document.querySelector("[data-modal-close3]"),modal:document.querySelector("[data-modal3]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+},{}],"HVCY":[function(require,module,exports) {
+(()=>{const o={openModalBtn:document.querySelector("[about-modal-open]"),closeModalBtn:document.querySelector("[about-modal-close]"),modal:document.querySelector("[about-modal]")};function e(){o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/contacts-btn.js"),require("./scripts/mobile.js"),require("./scripts/btn-back"),require("./scripts/products-mod"),require("./scripts/products-mod2"),require("./scripts/products-mod3");
-},{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/contacts-btn.js":"rRCc","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO","./scripts/products-mod":"itWs","./scripts/products-mod2":"Ra7X","./scripts/products-mod3":"CNFb"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.9ec2e4ce.js.map
+"use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/contacts-btn.js"),require("./scripts/mobile.js"),require("./scripts/btn-back"),require("./scripts/products-mod"),require("./scripts/products-mod2"),require("./scripts/products-mod3"),require("./scripts/modal-about.js");
+},{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/contacts-btn.js":"rRCc","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO","./scripts/products-mod":"itWs","./scripts/products-mod2":"Ra7X","./scripts/products-mod3":"CNFb","./scripts/modal-about.js":"HVCY"}]},{},["Focm"], null)
+//# sourceMappingURL=/ice-cream/src.78d61895.js.map
