@@ -221,6 +221,7 @@
 
 .cards-ice__tittle {
   font-family: Titan One;
+  // font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
 
@@ -247,7 +248,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $color-design-white;
   @media screen and (min-width: $tablet) {
     line-height: 1.7;
   }
@@ -261,6 +262,7 @@
   border: 0;
   border-radius: 50%;
   margin-top: 30px;
+  transition: background-color $pr-transition, fill $pr-transition;
   @media screen and (min-width: $tablet) {
     margin-top: 40px;
   }
