@@ -1,5 +1,9 @@
 
   
+ .container{
+  z-index:4;
+}
+  
   @media screen and(min-width:1280px) {
     .backdrop__menu {
       display: none;
@@ -7,6 +11,8 @@
     .mob__menu{
       display: none;
     }
+
+    
   }
   @media screen and (max-width: 1279.8px) {
     .backdrop-menu {
