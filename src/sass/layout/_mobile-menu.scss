@@ -76,7 +76,7 @@
   
       &:focus,
       &:hover {
-        background-color: $bg-btn-light-hover;
+        border: 1px solid $bg-btn-light-hover;
       }
     }
   
@@ -94,6 +94,7 @@
       display: flex;
       justify-content: center;
       border-radius: 25px;
+      align-items: center;
      
   
       font-family: $text-main;
@@ -118,6 +119,7 @@
       }
 
       &--arrow{
+        margin-left: 15px;
         fill:green;
         .btn__buy :hover &,
         .btn__buy :focus &{
