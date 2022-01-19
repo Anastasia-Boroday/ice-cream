@@ -1,7 +1,10 @@
 
   
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     .backdrop__menu {
+      display: none;
+    }
+    .mob__menu{
       display: none;
     }
   }
@@ -15,7 +18,7 @@
     .backdrop__menu {
       position: fixed;
       top: 0;
-      right: 20px;
+      right: 0;
   
       z-index: 999;
       height: 100%;
@@ -29,9 +32,9 @@
       right: 0;
       width: 250px;
   
-      height: 502px;
+      height: 100vh;
       padding: 25px;
-      background-color: #e17992;
+      background-color: $bg-mobile-color;
       z-index: 999;
       opacity: 0;
       overflow-y: scroll;
@@ -59,24 +62,24 @@
       height: 40px;
   
       border-radius: 50%;
-      background-color: grey;
+      background-color: transparent;
       border: transparent;
   
       // transition:  background-color $pr-transition;
   
       .btn__mob__menu:focus,
       .btn__mob__menu:hover {
-        background-color: #fff;
+        background-color: rgb(158, 22, 22);
       }
     }
   
     .icon__close {
-      fill: $color-design-main;
+      fill: red;
       // transition: color $pr-transition;
   
       .btn__mob__menu:focus &,
       .btn__mob__menu:hover & {
-        fill: #fff;
+        fill: $bg-btn-light;
       }
     }
   
