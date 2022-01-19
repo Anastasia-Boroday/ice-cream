@@ -39,6 +39,7 @@
       width: 250px;
   
       height: 100vh;
+
       padding: 25px;
       background-color: $bg-mobile-color;
       z-index: 999;
@@ -71,21 +72,21 @@
       background-color: transparent;
       border: transparent;
   
-      // transition:  background-color $pr-transition;
+       transition:  background-color $pr-transition;
   
-      .btn__mob__menu:focus,
-      .btn__mob__menu:hover {
-        background-color: rgb(158, 22, 22);
-      }
+       &:focus,
+       &:hover {
+         border: 1px solid $bg-btn-light-hover;
+       }
     }
   
     .icon__close {
-      fill: red;
-      // transition: color $pr-transition;
+      fill:$bg-btn-light-hover;
+      transition: color $pr-transition;
   
       .btn__mob__menu:focus &,
       .btn__mob__menu:hover & {
-        fill: $bg-btn-light;
+        fill: $bg-btn-dark;
       }
     }
   
@@ -93,9 +94,8 @@
       display: flex;
       justify-content: center;
       border-radius: 25px;
-      @media screen and (min-width: 1120px) {
-        width: 200px;
-      }
+      align-items: center;
+     
   
       font-family: $text-main;
       font-style: normal;
@@ -104,7 +104,9 @@
       line-height: 1.4;
   
       color: $bg-btn-dark;
-      background-color: #fff;
+      background-color: $bg-btn-light;
+
+      transition:  background-color $pr-transition; 
   
       &--size {
         margin-top: 50px;
@@ -113,15 +115,24 @@
       }
       &:hover,
       &:focus {
-        background-color: #ecebeb;
+        background-color:$bg-btn-light-hover;
+      }
+
+      &--arrow{
+        margin-left: 15px;
+        fill:currentColor;
+        .btn__buy :hover &,
+        .btn__buy :focus &{
+            fill:$br-mobile-color;
+        }
       }
     }
   
     // mob-nav
     .mob__nav {
       &--item {
-        border-bottom: 1px solid #e18298;
-        border-top: 1px solid #e18298;
+        border-bottom: 1px solid $br-mobile-color;
+        border-top: 1px solid $br-mobile-color;
         &:nth-child(2n) {
           border-bottom: none;
           border-top: none;
@@ -140,11 +151,11 @@
         line-height: 1.3;
         align-items: center;
   
-        color: #fff;
+        color: $bg-btn-light;
   
         // transition: color $pr-transition background-color $pr-transition;
   
-        &:hover,
+        &:hover ,
         &:focus {
           color: #d41443;
           background-color: #e18298;
@@ -153,6 +164,10 @@
         &:focus {
           outline: none;
           border: 1px solid #e18298;
+        }
+        &:hover .active ,
+        &:focus .active{
+          display: none;
         }
       }
     }
