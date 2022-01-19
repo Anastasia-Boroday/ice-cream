@@ -1,0 +1,58 @@
+.btn-back {
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 15px;
+  z-index: 200;
+  transition: background-color 0.3s;
+  position: fixed;
+  border: 0;
+  border-radius: 50%;
+  background-color: $color-design-main;
+
+  &:hover,
+  &:focus {
+    background-color: $color-line-in-contacts;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(212, 20, 68, 0.822);
+  }
+  &:hover,
+  &:focus {
+    fill: $color-design-white;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 95px;
+    height: 95px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.btn-back-str {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: $color-design-white;
+  transform: rotate(-90deg);
+  transition: color 0.3s;
+  .btn-back:hover &,
+  .btn-back:focus & {
+    color: $color-design-main;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 0.01em;
+  }
+}
