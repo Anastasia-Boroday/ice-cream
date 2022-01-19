@@ -7,7 +7,7 @@
 
   z-index: 210;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(0, 0, 0, 0.5);
 
   transition: visibility $pr-transition, opacity $pr-transition;
   &.is-hidden .modal {
@@ -59,42 +59,26 @@
 }
 
 .modal-about__btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 30px;
-  height: 30px;
-
-  outline: none;
-  background-color: $color-design-white;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-
-  transition: border $pr-transition;
-
-  &:hover,
-  &:focus {
-    background-color: $bg-btn-light-hover;
-    border-color: $color-design-main;
-  }
-
-  &:hover .modal-about__btn-icon-close,
-  &:focus .modal-about__btn-icon-close {
-    fill: $color-design-main;
+      background-color: $color-design-white;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      border-radius: 50%;
+      border: 0px;
+      z-index: 50;
+      &:hover,
+      &:focus {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+        transition: transform 250ms linear; 
   }
 }
 
 .modal-about__btn-icon-close {
   width: 10px;
   height: 10px;
-  fill: $bg-mobile-menu;
+  fill: $bg-btn-dark;
 
   transition: fill $pr-transition;
 }
