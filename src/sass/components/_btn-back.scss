@@ -3,7 +3,7 @@
   height: 50px;
   bottom: 20px;
   right: 15px;
-  z-index: 2000;
+  z-index: 200;
   transition: background-color 0.3s;
   position: fixed;
   border: 0;
@@ -13,8 +13,9 @@
   &:hover,
   &:focus {
     background-color: $color-line-in-contacts;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(212, 20, 68, 0.822);
   }
-
   &:hover,
   &:focus {
     fill: $color-design-white;
