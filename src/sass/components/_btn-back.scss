@@ -9,11 +9,10 @@
   position: fixed;
   border: 0;
   border-radius: 50%;
-  background-color: $color-design-main;
+  background-color: #fd88a3;
 
   &:hover,
   &:focus {
-    background-color: $customer-active-elements;
     transform: translateY(-10px);
     box-shadow: 5px 5px 5px rgba(212, 20, 68, 0.822);
 
