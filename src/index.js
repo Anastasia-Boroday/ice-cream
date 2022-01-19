@@ -9,3 +9,5 @@ import './scripts/products-mod'
 
 import './scripts/products-mod2'
 import './scripts/products-mod3'
+
+import './scripts/modal-about.js'
