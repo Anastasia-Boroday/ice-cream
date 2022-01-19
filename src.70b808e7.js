@@ -5,7 +5,7 @@ $(".reviews__set").slick({dots:!0});
 },{}],"rRCc":[function(require,module,exports) {
 var n=document.getElementById("myModal"),e=document.getElementById("myBtn"),t=document.getElementsByClassName("close")[0];e.onclick=function(){n.style.display="block"},t.onclick=function(){n.style.display="none"},window.onclick=function(e){e.target==n&&(n.style.display="none")};
 },{}],"QThZ":[function(require,module,exports) {
-(()=>{const e=document.querySelector(".js-menu"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),d=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",d),o.addEventListener("click",d),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
+(()=>{const e=document.querySelector(".js-menu"),t=document.querySelector(".js-open-menu"),n=document.querySelector(".js-close-menu"),c=()=>{const n="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!n),e.classList.toggle("is-open")};t.addEventListener("click",c),n.addEventListener("click",c)})();
 },{}],"sOUO":[function(require,module,exports) {
 var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.addClass("show"):o.removeClass("show")}),o.on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},"300")});
 },{}],"itWs":[function(require,module,exports) {
@@ -17,4 +17,4 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/customer/slider.js"),require("./scripts/contacts-btn.js"),require("./scripts/mobile.js"),require("./scripts/btn-back"),require("./scripts/products-mod"),require("./scripts/products-mod2"),require("./scripts/products-mod3");
 },{"./sass/main.scss":"clu1","./scripts/customer/slider.js":"QSCP","./scripts/contacts-btn.js":"rRCc","./scripts/mobile.js":"QThZ","./scripts/btn-back":"sOUO","./scripts/products-mod":"itWs","./scripts/products-mod2":"Ra7X","./scripts/products-mod3":"CNFb"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream/src.ea346e55.js.map
+//# sourceMappingURL=/ice-cream/src.70b808e7.js.map
