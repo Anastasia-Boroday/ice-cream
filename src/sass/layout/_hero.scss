@@ -87,13 +87,12 @@
 
   .hero-fields__item {
     font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 8px;
-    line-height: 10px;
+    line-height: calc(10 / 8);
     .link {
       text-decoration: none;
       color: inherit;
@@ -117,33 +116,34 @@
     border-radius: 20px;
     background-color: $color-design-main;
     color: $color-design-white;
-    padding: 9px 14px;
-    transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-    transition-delay: 0;
+
+    transition: background-color $pr-transition;
     @media screen and (min-width: $desktop) {
-      padding: 15px 23px;
     }
   }
-  .product-field:hover {
-    background-color: $bg-btn-dark-hover;
-  }
-  .how-made-field {
-    border-radius: 20px;
-    color: $color-design-main;
-    background-color: $color-design-white;
+
+  .hero-fields__link {
     padding: 9px 14px;
-    transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-    transition-delay: 0;
     @media screen and (min-width: $tablet) {
       padding: 9px 14px;
     }
     @media screen and (min-width: $desktop) {
       padding: 15px 20px;
     }
+    &:focus,
+    &:hover {
+      border-radius: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 15px 23px;
+    }
+  }
+
+  .how-made-field {
+    border-radius: 20px;
+    color: $color-design-main;
+    background-color: $color-design-white;
+    transition: background-color $pr-transition;
   }
   .how-made-field:hover {
     background-color: $bg-btn-light-hover;
@@ -214,6 +214,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition: fill $pr-transition, background-color $pr-transition;
     &:hover,
     &:focus {
       background-color: $color-design-main;
@@ -269,15 +270,19 @@
   width: 171px;
   height: 410px;
   left: 117px;
-  top: 92px;
+  top: 192px;
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transform: translatey(calc(-100px));
+
   @media screen and (min-width: $tablet) {
     width: 143px;
     height: 336px;
     left: 378px;
-    top: 63px;
+    top: 163px;
   }
   @media screen and (min-width: $desktop) {
-    top: 108px;
+    top: 208px;
     left: 594px;
     width: 236px;
     height: 557px;

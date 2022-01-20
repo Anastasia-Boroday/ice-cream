@@ -178,7 +178,8 @@
   transform: translatey(-50%);
   z-index: 3;
   opacity: 0;
-  transition: opacity 250ms linear, background-color 250ms linear;
+  transition: opacity $pr-transition, background-color $pr-transition;
+
   overflow: hidden;
 
   width: 30px;
@@ -190,6 +191,7 @@
   background-position: center;
   background-size: 50%;
   background-color: $color-line-in-contacts;
+  transition: background-color $pr-transition;
 
   &:hover,
   &:focus {
@@ -231,7 +233,7 @@
       border: none;
       color: transparent;
 
-      transition: background-color 250ms linear;
+      transition: background-color $pr-transition;
 
       &:hover,
       &:focus {
@@ -249,7 +251,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: transparent;
-      transition: background-color 0ms linear;
+      transition: background-color $pr-transition;
 
       &:hover,
       &:focus {

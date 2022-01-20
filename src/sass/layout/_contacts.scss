@@ -12,6 +12,7 @@
 // }
 
 .contacts-title {
+  position: relative;
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -20,7 +21,10 @@
   padding: 0;
   margin-top: -1px;
 }
-
+.contacts-title-hid {
+  position: absolute;
+  top: -100px;
+}
 .contacts-cards {
   display: flex;
   justify-content: center;
@@ -56,6 +60,9 @@
     margin: 15px 15px;
   }
 }
+.contacts-cards-day {
+  margin-bottom: 10px;
+}
 
 .contacts-cards-type {
   display: inline-block;
@@ -82,7 +89,7 @@
   color: $color-design-black;
   padding-top: 25px;
   @media screen and (min-width: $tablet) {
-  padding-top: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -117,7 +124,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
   }
-} 
+}
 
 .contacts-cards-list {
   padding-top: 25px;
@@ -142,13 +149,13 @@
     justify-content: center;
     margin-top: 81px;
   }
-    @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     margin-top: 86px;
   }
 }
 
 .contacts-btn-list__item:last-of-type {
-  @media screen and (min-width: $tablet) {  
+  @media screen and (min-width: $tablet) {
     margin-left: 14.5px;
   }
 }
@@ -157,7 +164,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #D41342;
+  background: #d41342;
   border-radius: 22px;
   border: 0;
   width: 162px;
@@ -175,8 +182,9 @@
 }
 
 .contacts-btn--inverse {
-  background: $bg-btn-light;
-  color: #D41342;
+  background-color: $bg-btn-light;
+  color: #d41342;
+  transition: background-color $pr-transition;
   &:hover,
   &:focus {
     background-color: $bg-btn-light-hover;
@@ -184,55 +192,67 @@
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 205; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 205; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-    position: relative;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    background-color: rgba(255, 184, 202, 0.2);    
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 2%;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 184, 202, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-body {
@@ -242,6 +262,6 @@
 }
 
 .modal-header {
-    padding: 0 4px;
-    color: white;
+  padding: 0 4px;
+  color: white;
 }

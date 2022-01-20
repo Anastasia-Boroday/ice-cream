@@ -46,9 +46,8 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition-property: background-color;
-    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    transition: background-color $pr-transition, color $pr-transition;
     &:hover,
     &:focus {
       background-color: $color-design-main;
@@ -65,9 +64,8 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition-property: background-color;
-    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    transition: background-color $pr-transition, color $pr-transition;
     &:hover,
     &:focus {
       background-color: $color-design-main;
