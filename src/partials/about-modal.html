@@ -9,27 +9,55 @@
             </svg>
         </button>
 
-        <img class="modal-about__pic-cow" src="./images/about/modal-cow.png" alt="cow">
-        <img class="modal-about__pic-moo" src="./images/about/modal-moo!.png" alt="cow">
+        <picture>
+            <source srcset="
+                        ./images/about/modal-cow-tablet.png 1x,
+                        ./images/about/modal-cow-tablet@x2.png 2x
+                        " 
+                        media="(min-width:768px)" />
+        
+            <source srcset="
+                        ./images/about/modal-cow-mobile.png 1x,
+                        ./images/about/modal-cow-mobile@x2.png 2x
+                        " 
+                        media="(min-width:320px)" />
+        
+            <img class="modal-about__pic-cow" src="./images/about/modal-cow-tablet.png" alt="cow">
+        </picture>
 
         <picture>
             <source srcset="
-                        ./images/header/header-milk-desktop.png 1x,
-                        ./images/header/header-milk-desktop@x2.png 2x
+                        ./images/about/modal-moo!-tablet.png 1x,
+                        ./images/about/modal-moo!-tablet@x2.png 2x
+                        " media="(min-width:768px)" />
+        
+            <source srcset="
+                        ./images/about/modal-moo!-mobile.png 1x,
+                        ./images/about/modal-moo!-mobile@x2.png 2x
+                        " media="(min-width:320px)" />
+        
+            <img class="modal-about__pic-moo" src="./images/about/modal-moo!-tablet.png" alt="moo!">
+        </picture>
+
+        <picture>
+            <source srcset="
+                        ./images/about/modal-milk-desktop.png 1x,
+                        ./images/about/modal-milk-desktop@x2.png 2x
                         " 
                         media="(min-width:1280px)" />
 
             <source srcset="
-                        ./images/header/header-milk-tablet.png 1x,
-                        ./images/header/header-milk-tablet@x2.png 2x
+                        ./images/about/modal-milk-tablet.png 1x,
+                        ./images/about/modal-milk-tablet@x2.png 2x
                         " 
                         media="(min-width:768px)" />
 
-                <!-- <source srcset="
-                                    ./images/header/header-milk-mobile.png 1x,
-                                    ./images/header/header-milk-mobile@x2.png 2x
-                                    " media="(min-width:320px)" /> -->
-            <img class="modal-about__pic-milk" src="./images/header/header-milk-desktop.png" alt="jug of milk">
+                <source srcset="
+                            ./images/about/modal-milk-mobile.png 1x,
+                            ./images/about/modal-milk-mobile@x2.png 2x
+                            " media="(min-width:320px)" />
+
+            <img class="modal-about__pic-milk" src="./images/about/modal-milk-desktop.png" alt="jug of milk">
         </picture>
 
         <p class="about__modal-title">how it’s made?</p>
