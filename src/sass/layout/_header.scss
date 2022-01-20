@@ -2,9 +2,9 @@ header {
   background-color: transparent;
   position: absolute;
   z-index: 5;
-  left: 50%;
   top: 0;
-  transform: translate(-50%);
+  // left: 50%;
+  // transform: translate(-50%);
   width: 100%;
 }
 
@@ -114,8 +114,6 @@ header {
   align-items: center;
   width: 160px;
 
- 
-
   font-family: $text-main;
   font-style: normal;
   font-weight: bold;
@@ -124,45 +122,41 @@ header {
 
   color: $bg-btn-dark;
   background-color: $bg-btn-light;
-  border:transparent;
+  border: transparent;
 
-  transition:  background-color $pr-transition; 
+  transition: background-color $pr-transition;
 
   padding: 10px 0;
 
   &:hover,
   &:focus {
-    background-color:$bg-btn-light-hover;
+    background-color: $bg-btn-light-hover;
     color: $bg-btn-dark-hover;
   }
 
-  &--arrow{
-   
-    fill:currentColor;
+  &--arrow {
+    fill: currentColor;
     margin-left: 15px;
     .buy-btn:hover &,
-    .buy-btn:focus &{
-        fill:$bg-btn-dark-hover;
+    .buy-btn:focus & {
+      fill: $bg-btn-dark-hover;
     }
   }
   @media screen and (max-width: 767.98px) {
     display: none;
   }
 
-  .mob__menu .is-open &{
+  .mob__menu .is-open & {
     display: none;
   }
 }
 
-
-
 .js-open-menu {
-  
   display: inline-flex;
 
   align-items: center;
   justify-content: center;
-  
+
   margin-left: auto;
 
   width: 40px;
@@ -172,19 +166,12 @@ header {
   background-color: transparent;
   border: transparent;
 
-   transition:  background-color $pr-transition;
+  transition: background-color $pr-transition;
 
-   &:focus,
-   &:hover {
-    background-color:$bg-btn-light-hover;
-   }
-
-
-
-
-
-
-
+  &:focus,
+  &:hover {
+    background-color: $bg-btn-light-hover;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-right: 18px;
@@ -200,6 +187,6 @@ header {
 
   .js-open-menu:focus &,
   .js-open-menu:hover & {
-    fill:$bg-btn-dark;
+    fill: $bg-btn-dark;
   }
 }
