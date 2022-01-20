@@ -32,7 +32,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-design-white;
-  z-index: 5;
+  z-index: 2;
   text-align: left;
   top: 193px;
   left: 20px;
@@ -73,7 +73,7 @@
 .hero-fields {
   position: absolute;
   display: inline-flex;
-  z-index: 5;
+  z-index: 2;
   top: 318px;
   left: 20px;
   @media screen and (min-width: $tablet) {
