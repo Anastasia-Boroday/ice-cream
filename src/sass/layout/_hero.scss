@@ -152,6 +152,9 @@
 
 .milk-bucket {
   position: absolute;
+  animation-duration: 2s;
+  animation-name: bounce_right;
+  animation-timing-function: ease;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -247,6 +250,9 @@
   top: 83px;
   max-width: 346px;
   height: 344px;
+  animation-duration: 2s;
+  animation-name: size;
+  animation-timing-function: ease;
   @media screen and (max-width: 479px) {
   }
   @media screen and (min-width: $tablet) {
@@ -270,19 +276,19 @@
   width: 171px;
   height: 410px;
   left: 117px;
-  top: 192px;
-  transition-property: transform;
-  transition-duration: 2000ms;
-  transform: translatey(calc(-100px));
+  top: 92px;
+  animation-duration: 2s;
+  animation-name: bounce_top;
+  animation-timing-function: ease;
 
   @media screen and (min-width: $tablet) {
     width: 143px;
     height: 336px;
     left: 378px;
-    top: 163px;
+    top: 63px;
   }
   @media screen and (min-width: $desktop) {
-    top: 208px;
+    top: 108px;
     left: 594px;
     width: 236px;
     height: 557px;
@@ -290,6 +296,9 @@
 }
 
 .hero-girl {
+  animation-duration: 2s;
+  animation-name: bounce_left;
+  animation-timing-function: ease;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -371,6 +380,9 @@
   }
   .points-info__ellipse {
     position: absolute;
+    animation-duration: 2s;
+    animation-name: size;
+    animation-timing-function: ease;
     top: 0;
     right: 0;
     z-index: 2;
@@ -397,5 +409,41 @@
         text-align: left;
       }
     }
+  }
+}
+
+@keyframes bounce_top {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce_left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce_right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
   }
 }
