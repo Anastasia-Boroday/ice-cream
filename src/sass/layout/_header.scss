@@ -59,11 +59,7 @@ header {
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-
-     transition: color $pr-transition;
-
-   
-
+    transition: color $pr-transition;
 
     color: $color-design-main;
 
@@ -112,43 +108,98 @@ header {
 }
 
 .buy-btn {
-  position: relative;
-  font-family: DM Sans;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  align-items: center;
+  width: 160px;
+
+ 
+
+  font-family: $text-main;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.4;
+
   color: $bg-btn-dark;
-  border-radius: 22px;
-  border: none;
-  width: 160px;
-  height: 44px;
-  transition: background-color $pr-transition;
+  background-color: $bg-btn-light;
+  border:transparent;
+
+  transition:  background-color $pr-transition; 
+
+  padding: 10px 0;
+
   &:hover,
   &:focus {
-    background-color: $bg-btn-light-hover;
+    background-color:$bg-btn-light-hover;
+    color: $bg-btn-dark-hover;
+  }
+
+  &--arrow{
+   
+    fill:currentColor;
+    margin-left: 15px;
+    .buy-btn:hover &,
+    .buy-btn:focus &{
+        fill:$bg-btn-dark-hover;
+    }
   }
   @media screen and (max-width: 767.98px) {
     display: none;
   }
-}
-.buy-btn_icon {
-  position: absolute;
-  top: 52.5%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+
+  .mob__menu .is-open &{
+    display: none;
+  }
 }
 
+
+
 .js-open-menu {
+  
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  
+  margin-left: auto;
+
   width: 40px;
   height: 40px;
-  padding-bottom: 10px;
+
+  border-radius: 50%;
   background-color: transparent;
-  border: none;
+  border: transparent;
+
+   transition:  background-color $pr-transition;
+
+   &:focus,
+   &:hover {
+    background-color:$bg-btn-light-hover;
+   }
+
+
+
+
+
+
+
+
   @media screen and (min-width: $tablet) {
     margin-right: 18px;
   }
   @media screen and (min-width: $desktop) {
     display: none;
+  }
+}
+
+.icon__open {
+  fill: $bg-btn-dark;
+  transition: fill $pr-transition;
+
+  .js-open-menu:focus &,
+  .js-open-menu:hover & {
+    fill:$bg-btn-dark;
   }
 }
